@@ -127,7 +127,7 @@ Decargar el software de administracion de softether y conectarse al vpn server (
 
 3
 
-- Doble click en el virtual hun DEFAULT
+- Doble click en el virtual hub DEFAULT
 
 - Click en Authentication Server Setting
 
@@ -153,6 +153,8 @@ Decargar el software de administracion de softether y conectarse al vpn server (
 - En auth type click en RADIUS Authentication
 
 - Click en OK
+
+Nota el usuario administratoe no va a fucnionar para el vpn, pruebe con otro!
 
 
 La anterior configuracion puede usaerse facilmente con el cliente nativo de windows  / mac /iOS / android, protocolo l2tp.
