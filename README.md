@@ -62,7 +62,7 @@ Instalacion:
 3. Con la cuenta de root, ejecutar init.sh, este script descarga el software necesario para el script principal e inicializa LXD.
 
 
-4. Ejecutar NanoNBXv0.1.py, este script instala los 5 servidores y configura todo para que interactuen.
+4. Ejecutar NanoNBXv1.0.py, este script instala los 5 servidores y configura todo para que interactuen.
 
 
 Si el punto anterior falla (falla descargando el software o algun otro) y queremos repetirlo, ejecutaremos el script llamado CleanUP.py y volveremos a el punto numero 4.
