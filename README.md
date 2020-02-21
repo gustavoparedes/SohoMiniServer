@@ -41,7 +41,7 @@ Instalacion limpia de Ubuntu 19 sobre tu Raspberry (por defecto ya trae LXD)
 
 Una tarjeta de red adicional (USB a RJ-45)
 
-Script de instalacion aqui
+Script de instalacion
 
 Conexion a internet
 
