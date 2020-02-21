@@ -159,10 +159,13 @@ La anterior configuracion puede usaerse facilmente con el cliente nativo de wind
 
 
 
+
+
+
 Fileserver:
 
 
-Al crear el usuario desde el "Active Directory Users and Computers" darle clock con el boton derecho y elejir "properties" , ahi en home folder elegir connect, seleccionar una letra (p.e Z) y en el campo to colocar: \\fs\users\usuario.
+Al crear el usuario desde el "Active Directory Users and Computers" darle click con el boton derecho y elejir "properties" , ahi en home folder elegir connect, seleccionar una letra (p.e Z) y en el campo to colocar: \\fs\users\usuario.
 
 Vera una advertencia de que el directorio no se pudo crear y que hay que ahcerlo manualmente y colocar los permisos. A decir verdad el directorio se creo automaticamente y solo falta colocar los permisos, para mi caso, supomiendo que el dominio es test.net y el usuario gustavo seria:
 
