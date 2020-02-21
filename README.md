@@ -206,7 +206,7 @@ Como va la solucion:
 4. Contenedor File Server : Es una estacion del dominio que se elija al momento de instalar
 
 
-5. Contenedor VPN: Esta mquina no pertenence al dominio, ejecuta el software de VPN softether (https://www.softether.org/), no hace falta rpesentar este fenomemal proyecto, para mi de lo mejor.
+5. Contenedor VPN: Esta mquina no pertenence al dominio, ejecuta el software de VPN softether (https://www.softether.org/).
 
 
 6. La Raspberry PI como tal, ejecuta Ubuntu 19 y LXD como sistema de contenedores / virtualizador. Adicionalmente ejecuta hostapd, para usar la interfaz de red Wifi que trae el Raspberry PI como un accesspoint que autentica contra el directorio. Un access point aparte dara mayor cobertura, pero para un espacio pequenio (como el mio :)) el que me proporciona el Raspberry PI esta bien.
