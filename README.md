@@ -11,6 +11,8 @@ File server
 
 VPN
 
+Access Point autenticando contra el directorio
+
 
 p.e para una red tipo 192.168.100.0/24:
 
