@@ -191,7 +191,7 @@ Para una lista de usuarios lo ams sencillo seria hacer un script que lo cree y g
 Como va la solucion:
 
 
-1 Contenedor firewall: Es una estacion del dominio que se elija al momento de instalar, corre un servidor dhcp, responsable por asignar las direcciones IP a los clientes lan (el rango es el 70% del final de la direcciones aprox) y vpn, un servidor freeRadius, responsable por autenticar a los usuarios de VPN y de la red WIFI (o cableada si se quiere) con 802.1x. Inicialmente solo tiene las reglas basicas de firewall NAT (Permitir todo el trafico saliente, solo ping y ssh entrante y acceso a la VPN) , la idea es que cada quien configure sus propias reglas a medida, en mi caso particular uso fwbuilder (https://github.com/fwbuilder/fwbuilder).
+1 Contenedor firewall: Es una estacion del dominio que se elija al momento de instalar, corre un servidor dhcp, responsable por asignar las direcciones IP a los clientes lan (el rango es el 70% del final de la direcciones aprox) , y un servidor freeRadius, responsable por autenticar a los usuarios de VPN y de la red WIFI (o cableada si se quiere) con 802.1x. Inicialmente solo tiene las reglas basicas de firewall / NAT (Permitir todo el trafico saliente, solo ping y ssh entrante y acceso a la VPN) , la idea es que cada quien configure sus propias reglas a medida, en mi caso particular uso fwbuilder (https://github.com/fwbuilder/fwbuilder).
 
 
 2. Contenedor Directorio principal: Ejecuta samba 4 AD como Directorui Activo, por defecto el nivel de funcionalidad es el de un  AD 2008_R2 (mas informacion aqui (https://wiki.samba.org/index.php/Raising_the_Functional_Levels))
@@ -216,7 +216,7 @@ Direccionamiento de red interna:
 X.X.X.X/8 Maximo, p.e 10.0.0.0/8 : 
 
 
-Es una red enorme, pero se penso asi , pues si no va bien el Raspberry PI, siempre se puede correr sobre un servidor granade y potente que atienda varios usuarios. El limite esl el hardware.
+Es una red enorme, para el Raspberry PI, siempre se puede correr sobre un servidor granade y potente que atienda varios usuarios. El limite esl el hardware.
 
 
 X.X.X.X/26  Minimo, p.e 10.0.0.0/26: Que es una red suficientemente pequenia.
