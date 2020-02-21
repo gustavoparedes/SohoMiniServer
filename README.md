@@ -127,15 +127,15 @@ Decargar el software de administracion de softether y conectarse al vpn server (
 
 3
 
--Doble click en el virtual hun DEFAULT
+- Doble click en el virtual hun DEFAULT
 
--Click en Authentication Server Setting
+- Click en Authentication Server Setting
 
--Habilitar Use Radius Autehntication
+- Habilitar Use Radius Autehntication
 
--En Radius server la ip del firewall (la terminada en 1)
+- En Radius server la ip del firewall (la terminada en 1)
 
--Port 1812 por defecto
+- Port 1812 por defecto
 
 - shared secred: qwertyui
 
@@ -148,7 +148,7 @@ Decargar el software de administracion de softether y conectarse al vpn server (
 
 - Click en New User
 
-- Puede crear un usuario llamado * para referirise a cualquier usuario del directorio o el usuario como aparece en el user logon name del directorio para dar acceso vpn a usuarios nombrados
+- Puede crear un usuario llamado * para referirise a cualquier usuario del directorio o el usuario como aparece en el user    logon name del directorio para dar acceso vpn a usuarios nombrados
 
 - En auth type click en RADIUS Authentication
 
