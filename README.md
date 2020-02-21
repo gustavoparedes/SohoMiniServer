@@ -171,8 +171,10 @@ Fileserver:
 
 Al crear el usuario desde el "Active Directory Users and Computers" darle click con el boton derecho y elejir "properties" y despues "profile" , ahi en home folder elegir connect, seleccionar una letra (p.e Z) y en el campo to colocar: \\fs\users\usuario.
 
-Vera una advertencia de que el directorio no se pudo crear y que hay que ahcerlo manualmente y colocar los permisos. A decir verdad el directorio se creo automaticamente y solo falta colocar los permisos, para mi caso, supomiendo que el dominio es test.net y el usuario gustavo seria:
+Vera una advertencia de que el directorio no se pudo crear y que hay que hacerlo manualmente y colocar los permisos. A decir verdad el directorio se creo automaticamente y solo falta colocar los permisos, para mi caso, suponiendo que el dominio es test.net y el usuario gustavo seria:
 
+
+cd /Users
 
 chown test\\gustavo:test\\domain\ users gustavo
 
@@ -201,22 +203,22 @@ Como va la solucion:
 1 Contenedor firewall: Es una estacion del dominio que se elija al momento de instalar, corre un servidor dhcp, responsable por asignar las direcciones IP a los clientes lan (el rango es el 70% del final de la direcciones aprox) , y un servidor freeRadius, responsable por autenticar a los usuarios de VPN y de la red WIFI (o cableada si se quiere) con 802.1x. Inicialmente solo tiene las reglas basicas de firewall / NAT (Permitir todo el trafico saliente, solo ping y ssh entrante y acceso a la VPN) , la idea es que cada quien configure sus propias reglas a medida, en mi caso particular uso fwbuilder (https://github.com/fwbuilder/fwbuilder).
 
 
-2. Contenedor Directorio principal: Ejecuta samba 4 AD como Directorui Activo, por defecto el nivel de funcionalidad es el de un  AD 2008_R2 (mas informacion aqui (https://wiki.samba.org/index.php/Raising_the_Functional_Levels))
+2. Contenedor Directorio principal: Ejecuta samba 4 AD como Directorio Activo, por defecto el nivel de funcionalidad es el de un  AD 2008_R2 (mas informacion aqui (https://wiki.samba.org/index.php/Raising_the_Functional_Levels))
 
 
 3. Contenedor Directorio securndario: Ejecuta una replica del directorio principal.
 
 
-4. Contenedor File Server : Es una estacion del dominio que se elija al momento de instalar
+4. Contenedor File Server : Es una estacion del dominio que se elija al momento de instalar, las carpetas de usuarios van en /Users
 
 
-5. Contenedor VPN: Esta mquina no pertenence al dominio, ejecuta el software de VPN softether (https://www.softether.org/).
+5. Contenedor VPN: Esta mquina no pertenence al dominio, ejecuta el software de VPN softether (https://www.softether.org/), usa a FreeRadius en el firewall para autenticar.
 
 
 6. La Raspberry PI como tal, ejecuta Ubuntu 19 y LXD como sistema de contenedores / virtualizador. Adicionalmente ejecuta hostapd, para usar la interfaz de red Wifi que trae el Raspberry PI como un accesspoint que autentica contra el directorio. Un access point aparte dara mayor cobertura, pero para un espacio pequenio (como el mio :)) el que me proporciona el Raspberry PI esta bien.
 
 
-Direccionamiento de red interna:
+Direccionamiento de red interna LAN:
 
 
 
@@ -245,7 +247,11 @@ vpn (servidor vpn) 10.0.0.5
 Raspberry (maquina fisica) 10.0.0.254
 
 
+Red WAN:
 
+La direccion configurada o la que entregue el dhcp server si eligio esta opcion.
+
+El tiempo de instalacion es mas o menos 1 hora.
 
 
 
