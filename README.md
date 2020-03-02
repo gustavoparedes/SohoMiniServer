@@ -176,7 +176,7 @@ Vera una advertencia de que el directorio no se pudo crear y que hay que hacerlo
 
 cd /Users
 
-chown test\\gustavo:test\\domain\ users gustavo
+"chown test\\gustavo:test\\domain\ users gustavo"
 
 chmod 700 gustavo/
 
