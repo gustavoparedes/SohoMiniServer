@@ -30,7 +30,7 @@ p.e para una red tipo 192.168.100.0/24:
 192.168.100.254 Raspberry PI
 
 
-Todos los anteriores corriendo como contenedores / maquinas virtuales sobre LXD en Ubuntu server 19!
+Todos los anteriores corriendo como contenedores / maquinas virtuales sobre LXD en Ubuntu server 20!
 
 
 
