@@ -39,7 +39,7 @@ Que necesitas ?
 
 Raspberry PI 3 B+, si tienes una Raspberry PI 4 mucho mejor .
 
-Instalacion limpia de Ubuntu 19 sobre tu Raspberry (por defecto ya trae LXD)
+Instalacion limpia de Ubuntu 20 sobre tu Raspberry (por defecto ya trae LXD)
 
 Una tarjeta de red adicional (USB a RJ-45)
 
