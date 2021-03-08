@@ -156,7 +156,7 @@ Decargar el software de administracion de softether y conectarse al vpn server (
 
 - Click en OK
 
-Nota: el usuario administratoe no va a fucnionar para el vpn, pruebe con otro!
+Nota: el usuario nombrado administrator no va a fucnionar para el vpn, pruebe con otro o use * como usuario generico
 
 
 La anterior configuracion puede usaerse facilmente con el cliente nativo de windows  / mac /iOS / android, protocolo l2tp.
