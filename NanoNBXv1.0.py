@@ -248,13 +248,13 @@ def provision():
     for i in platillas:
         if platform.machine() == "x86_64":
             config = {'name': i, 'source': {'type': 'image', "mode": "pull", "server":
-            "https://cloud-images.ubuntu.com/daily", "protocol": "simplestreams", 'alias': 'eoan/amd64'},
+            "https://cloud-images.ubuntu.com/daily", "protocol": "simplestreams", 'alias': 'focal/amd64'},
             'profiles': ['default'] }        
             
             
         if platform.machine() == "armv7l":
             config = {'name': i, 'source': {'type': 'image', "mode": "pull", "server":
-            "https://cloud-images.ubuntu.com/daily", "protocol": "simplestreams", 'alias': 'eoan/armhf'},
+            "https://cloud-images.ubuntu.com/daily", "protocol": "simplestreams", 'alias': 'focal/armhf'},
             'profiles': ['default'] }                   
         print("Creando maquina: ", i)
         a = client.containers.create(config, wait=True)
