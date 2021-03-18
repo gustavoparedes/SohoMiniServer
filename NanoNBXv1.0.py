@@ -346,9 +346,9 @@ def provision():
                     sys.exit()
             print("Descargando VPN Server.....: \n")
             if platform.machine() == "x86_64":
-                subprocess.run(['lxc',  'exec', 'vpn', '--', 'bash', '-c', 'wget https://www.softether-download.com/files/softether/v4.34-9745-rtm-2020.04.05-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.34-9745-rtm-2020.04.05-linux-x64-64bit.tar.gz'])
+                subprocess.run(['lxc',  'exec', 'vpn', '--', 'bash', '-c', 'wget https://github.com/SoftEtherVPN/SoftEtherVPN_Stable/releases/download/v4.34-9744-beta/softether-vpnserver-v4.34-9744-beta-2020.03.20-linux-x64-64bit.tar.gz -O /usr/local/softether-vpnserver.tar.gz'])
             if platform.machine() == "armv7l":
-                subprocess.run(['lxc',  'exec', 'vpn', '--', 'bash', '-c', 'wget https://www.softether-download.com/files/softether/v4.34-9745-rtm-2020.04.05-tree/Linux/SoftEther_VPN_Server/32bit_-_ARM_EABI/softether-vpnserver-v4.34-9745-rtm-2020.04.05-linux-arm_eabi-32bit.tar.gz'])
+                subprocess.run(['lxc',  'exec', 'vpn', '--', 'bash', '-c', 'wget https://github.com/SoftEtherVPN/SoftEtherVPN_Stable/releases/download/v4.34-9744-beta/softether-vpnserver-v4.34-9744-beta-2020.03.20-linux-arm_eabi-32bit.tar.gz -O /usr/local/softether-vpnserver.tar.gz'])
             print("Generando imagen de: ",a[x].name)
             a[x].stop()
             time.sleep(5)
