@@ -9,6 +9,7 @@ for x in a:
     x.stop()
     time.sleep(8)
     x.delete()
+    
 a = client.profiles.all()
 
 for x in a:
@@ -16,3 +17,4 @@ for x in a:
         print("Borrando perfil: ", x.name)
         x.delete()
         time.sleep(8)
+

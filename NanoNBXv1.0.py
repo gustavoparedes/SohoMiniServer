@@ -26,6 +26,7 @@ def wait(t):
         print(i)
         time.sleep(1)
     print ("\033[A                             \033[A")
+    
 def get_domain_name():
     
     global domain
@@ -244,8 +245,8 @@ def provision():
    
     
     client = Client()
-    platillas = ['fw', 'samba', 'vpn']
-    for i in platillas:
+    plantillas = ['fw', 'samba', 'vpn']
+    for i in plantillas:
         if platform.machine() == "x86_64":
             config = {'name': i, 'source': {'type': 'image', "mode": "pull", "server":
             "https://cloud-images.ubuntu.com/daily", "protocol": "simplestreams", 'alias': 'focal/amd64'},
@@ -345,9 +346,9 @@ def provision():
                     sys.exit()
             print("Descargando VPN Server.....: \n")
             if platform.machine() == "x86_64":
-                subprocess.run(['lxc',  'exec', 'vpn', '--', 'bash', '-c', 'wget https://github.com/SoftEtherVPN/SoftEtherVPN_Stable/releases/download/v4.29-9680-rtm/softether-vpnserver-v4.29-9680-rtm-2019.02.28-linux-x64-64bit.tar.gz -O /usr/local/softether-vpnserver.tar.gz'])
+                subprocess.run(['lxc',  'exec', 'vpn', '--', 'bash', '-c', 'wget https://www.softether-download.com/files/softether/v4.34-9745-rtm-2020.04.05-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.34-9745-rtm-2020.04.05-linux-x64-64bit.tar.gz'])
             if platform.machine() == "armv7l":
-                subprocess.run(['lxc',  'exec', 'vpn', '--', 'bash', '-c', 'wget https://github.com/SoftEtherVPN/SoftEtherVPN_Stable/releases/download/v4.29-9680-rtm/softether-vpnserver-v4.29-9680-rtm-2019.02.28-linux-arm_eabi-32bit.tar.gz -O /usr/local/softether-vpnserver.tar.gz'])
+                subprocess.run(['lxc',  'exec', 'vpn', '--', 'bash', '-c', 'wget https://www.softether-download.com/files/softether/v4.34-9745-rtm-2020.04.05-tree/Linux/SoftEther_VPN_Server/32bit_-_ARM_EABI/softether-vpnserver-v4.34-9745-rtm-2020.04.05-linux-arm_eabi-32bit.tar.gz'])
             print("Generando imagen de: ",a[x].name)
             a[x].stop()
             time.sleep(5)
