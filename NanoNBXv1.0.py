@@ -1187,7 +1187,7 @@ def instala_lxd():
             i.files.put('/etc/nsswitch.conf', nsswitchdata)
             print("Reiniciando........\n")
             wait(tmax)
-            print("****** Setpup FS *********")
+            print("****** Setup FS *********")
             i.files.put('/root/fs_setup.sh', fs_setup)
             e, so, se = i.execute(['chmod', '755', '/root/fs_setup.sh'])
             print(e)
