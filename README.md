@@ -55,7 +55,7 @@ Instalacion:
 
 
 
-1. Copiar llave publica de ssh en el directorio de instalacion (nanoNBXv1.0),la usara para acceder al fw via ssh. Despues copiar el directorio entero sobre la Raspberry. Verificar que tiene conexion a internet y la resolucion de nombre funciona bien.
+1. Copiar llave publica de ssh en el directorio de instalacion ,la usara para acceder al fw via ssh. Despues copiar el directorio entero sobre la Raspberry. Verificar que tiene conexion a internet y la resolucion de nombre funciona bien.
 
 
 2. Acceder a la Raspberry COMO ROOT , y posicionarse en el directorio donde esta el script, muy importante o no funcionara.
