@@ -1,4 +1,4 @@
-Mi setup para cursos para amd / intel o Raspberry Pi usando LXD y Ubuntu.
+Mi setup para cursos corre sobre plataforma  amd / intel / Raspberry Pi, usando LXD y Ubuntu.
 
 
 Firewall
