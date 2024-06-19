@@ -1,4 +1,4 @@
-Objetivo: Levantar una infraestructura minima para una oficina pequenia sobre un Raspberry Pi usando LXD y Ubuntu.
+Mi setup para cursos para amd / intel o Raspberry Pi usando LXD y Ubuntu.
 
 
 Firewall
@@ -34,7 +34,7 @@ Todos los anteriores corriendo como contenedores / maquinas virtuales sobre LXD 
 
 
 
-Que necesitas ?
+Elementos
 
 
 Raspberry PI 3 B+, si tienes una Raspberry PI 4 mucho mejor .
